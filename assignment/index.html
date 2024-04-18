@@ -9,8 +9,7 @@
 </head>
 
 <body>
-
-    <header class="section">
+    <!-- <header class="section">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
@@ -18,12 +17,80 @@
                 </a>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <section class="section" id="app">
         <div class="container">
             <h1 class="title">2023 Simplified Tax Form</h1>
-            <!-- Put your solution here -->
+            <table class="table is-striped is-fullwidth is-narrow">
+                <tbody>
+                    <tr class="row-1">
+                        <td rowspan="6">Income</td>
+                        <td><b>1</b> Wages, salaries, and tips. This should be shown in box 1 of your Form(s) W-2. Attach your Form(s) W-2.</td>
+                        <td><input class="input is-small" type="text" name="value-1" v-model.number="value1"/></td>  
+                    </tr>
+                    <tr class="row-2">
+                        <td><b>2</b> Taxable interest from 1099 forms</td>
+                        <td><input class="input is-small" type="text" name="value-2" v-model.number="value2"/></td>  
+                    </tr>
+                    <tr class="row-3">
+                        <td><b>3</b> Other Income not included in 1 and 2.</td>
+                        <td><input class="input is-small" type="text" name="value-3" v-model.number="value3"/></td>  
+                    </tr>
+                    <tr class="row-4">
+                        <td><b>4</b> Add lines 1, 2, and 3. This is your adjusted gross income.</td>
+                        <td><input class="input is-small" type="text" name="value-4" :value="value4" readonly/></td>  
+                    </tr>
+                    <tr class="row-5">
+                        <td><b>5</b>
+                             If this is a join return, add your spouse as a dependent. Write $13,850 for an individual return and $27,700 for a joint return. <br> Spouse
+                            <label class="checkbox">
+                                <input type="checkbox" name="filing-jointly" v-model="checkedbox" />
+                                </label>
+                        </td>
+                        <td><input class="input is-small" type="text" name="value-5" :value="value5" readonly/></td>  
+                    </tr>
+                    <tr class="row-6">
+                        <td><b>6</b> Subtract line 5 from line 4. If line 5 is larger than line 4, enter -0-. This is your taxable income.</td>
+                        <td><input class="input is-small" type="text" name="value-6" :value="value6" readonly/></td>  
+                    </tr>
+                    <tr class="row-7">
+                        <td rowspan="6">Payments, Credits, and Tax</td>
+                        <td><b>7</b> Federal income tax withheld from Form(s) W-2 and 1099.</td>
+                        <td><input class="input is-small" type="text" name="value-7" v-model.number="value7" /></td>  
+                    </tr>
+                    <tr class="row-8">
+                        <td><b>8</b> Earned income credit (EIC)</td>
+                        <td><input class="input is-small" type="text" name="value-8" v-model.number="value8" /></td>  
+                    </tr>
+                    <tr class="row-9">
+                        <td><b>9</b> Add lines 7 and 8a. These are your total payments and credits.</td>
+                        <td><input class="input is-small" type="text" name="value-9" :value="value9" readonly/></td>  
+                    </tr>
+                    <tr class="row-10">
+                        <td><b>10</b> Tax. Use the amount on line 6 above to find your tax in the tax table in the instructions. Then, enter the tax from the table on <br> this line.</td>
+                        <td><input class="input is-small" type="text" name="value-10" :value="value10" readonly/></td>  
+                    </tr>
+                    <tr class="row-11">
+                        <td><b>11</b> Other Taxes</td>
+                        <td><input class="input is-small" type="text" name="value-11" v-model.number="value11" /></td>  
+                    </tr>
+                    <tr class="row-12">
+                        <td><b>12</b> Add lines 10 and 11. This is your total tax.</td>
+                        <td><input class="input is-small" type="text" name="value-12" :value="value12" readonly/></td>  
+                    </tr>
+                    <tr class="row-13">
+                        <td>Refund</td>
+                        <td><b>13</b> If line 9 is larger than line 12, subtract line 12 from line 9. This is your refund. If form 8888 is attached, check here</td>
+                        <td><input class="input is-small" type="text" name="value-13" :value="value13" readonly/></td>  
+                    </tr>
+                    <tr class="row-14">
+                        <td>Amount You Owe</td>
+                        <td><b>14</b> If line 12 is larger than line 9, subtract line 9 from line 12. This is the amount you owe. For details on how to pay, see <br> instructions.</td>
+                        <td><input class="input is-small" type="text" name="value-14" :value="value14" readonly/></td>  
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 1040EZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <!-- <header class="section">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <strong>2023 1040EZ</strong>
+                </a>
+            </div>
+        </nav>
+    </header> -->
+
+    <section class="section" id="app">
+        <div class="container">
+            <h1 class="title">2023 Simplified Tax Form</h1>
+            <table class="table table is-striped is table is-fullwidth pr-0">
+                <tbody>
+                    <tr class="row-1">
+                        <td class="pt-4">Income</td>
+                        <td>
+                            <table class="table is-striped table is-fullwidth table is-bordered">
+                                <tbody>
+                                    <tr class="row-1">
+                                        <th>1</th>
+                                        <td>Wages, salaries, and tips. This should be shown in box 1 of your Form(s) W-2. Attach your Form(s) W-2.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-2">
+                                        <th>2</th>
+                                        <td>Taxable interest from 1099 forms</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-3">
+                                        <th>3</th>
+                                        <td>Other Income not included in 1 and 2.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-4">
+                                        <th>4</th>
+                                        <td>Add lines 1, 2, and 3. This is your adjusted gross income.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-5">
+                                        <th>5</th>
+                                        <td>
+                                            If this is a join return, add your spouse as a dependent. Write $13,850 for an individual return and $27,700 for a joint return. <br> Spouse
+                                            <label class="checkbox">
+                                                <input type="checkbox" />
+                                              </label>
+                                        </td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-6">
+                                        <th>6</th>
+                                        <td>Subtract line 5 from line 4. If line 5 is larger than line 4, enter -0-. This is your taxable income.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="row-7">
+                        <td class="pt-4">Payments, Credits, and Tax</td>
+                        <td>
+                            <table class="table is-striped table is-fullwidth table is-bordered">
+                                <tbody>
+                                    <tr class="row-7">
+                                        <th>7</th>
+                                        <td>Federal income tax withheld from Form(s) W-2 and 1099.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-8">
+                                        <th>8</th>
+                                        <td>Earned income credit (EIC)</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-9">
+                                        <th>9</th>
+                                        <td>Add lines 7 and 8a. These are your total payments and credits.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-10">
+                                        <th>10</th>
+                                        <td>Tax. Use the amount on line 6 above to find your tax in the tax table in the instructions. Then, enter the tax from the table on <br> this line.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-11">
+                                        <th>11</th>
+                                        <td>Other Taxes</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                    <tr class="row-12">
+                                        <th>12</th>
+                                        <td>Add lines 10 and 11. This is your total tax.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="row-13">
+                        <td class="pt-4">Refund</td>
+                        <td>
+                            <table class="table is-striped table is-fullwidth table is-bordered">
+                                <tbody>
+                                    <tr class="row-13">
+                                        <th>13</th>
+                                        <td>If line 9 is larger than line 12, subtract line 12 from line 9. This is your refund. If form 8888 is attached, check here</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="row-14">
+                        <td class="pt-4">Amount You Owe</td>
+                        <td>
+                            <table class="table is-striped table is-fullwidth table is-bordered">
+                                <tbody>
+                                    <tr class="row-14">
+                                        <th>14</th>
+                                        <td>If line 12 is larger than line 9, subtract line 9 from line 12. This is the amount you owe. For details on how to pay, see <br> instructions.</td>
+                                        <td><input class="input is-small" type="text"/></td>  
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <a href="">License BSD</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
